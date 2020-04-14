@@ -85,4 +85,5 @@ Last login: Mon Apr  6 06:39:27 2020 from 10.132.0.3
 
 
 bastion_IP = 35.189.194.18
+
 someinternalhost_IP = 10.132.0.5
