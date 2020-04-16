@@ -84,7 +84,6 @@ gcloud compute instances create example-instance \
 
 
 testapp_IP = 104.155.9.200
-
 testapp_port = 9292
 
 
