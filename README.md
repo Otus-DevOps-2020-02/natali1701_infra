@@ -46,23 +46,23 @@ PROFIT =) вызывается даже одной командой someinternal
 
         Host bastion
 
-                HostName bastion
+         HostName bastion
 
-                IdentityFile ~/.ssh/appuser
+         IdentityFile ~/.ssh/appuser
 
-                User appuser
+         User appuser
 
         Host someinternalhost
 
-                HostName someinternalhost
+         HostName someinternalhost
 
-                IdentityFile ~/.ssh/appuser
+         IdentityFile ~/.ssh/appuser
 
-                Port 22
+         Port 22
 
-                User appuser
+         User appuser
 
-                ProxyCommand ssh -q -W %h:%p bastion
+         ProxyCommand ssh -q -W %h:%p bastion
 
 ## HW3 - Знакомство с облачной инфраструктурой и облачными сервисами
 
