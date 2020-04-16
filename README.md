@@ -83,6 +83,7 @@ gcloud compute instances create example-instance \
     --metadata-from-file startup-script=startup-script.sh 
 
 testapp_IP = 104.155.9.200
+
 testapp_port = 9292
 
 
