@@ -66,7 +66,9 @@ PROFIT =) вызывается даже одной командой someinternal
  
 ## HW3 - Знакомство с облачной инфраструктурой и облачными сервисами
 
-bastion_IP = 35.189.194.18 someinternalhost_IP = 10.132.0.5
+bastion_IP = 35.189.194.18 
+
+someinternalhost_IP = 10.132.0.5
 
 ## HW4 - Основные сервисы Google Cloud Platform (GCP) 
 
@@ -81,9 +83,9 @@ gcloud compute instances create example-instance \
     --metadata-from-file startup-script=startup-script.sh 
 
 
-testapp_IP:104.155.9.200
+testapp_IP = '104.155.9.200'
 
-testapp_port:9292
+testapp_port = '9292'
 
 ***Создание правила для firewall из консоли с помощью gcloud***
 
