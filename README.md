@@ -1,5 +1,3 @@
-# natali1701_infra
-
 ## HW2 - Cпособы подключения к someinternalhost в одну команду из рабочего устройства
 
 ***Способ 1***
@@ -72,8 +70,6 @@ bastion_IP = 35.189.194.18 someinternalhost_IP = 10.132.0.5
 
 ## HW4 - Основные сервисы Google Cloud Platform (GCP) 
 
-testapp_IP = 104.155.9.200 testapp_port = 9292
-
 gcloud compute instances create example-instance \
     --boot-disk-size=10GB \
     --image-family ubuntu-1604-lts \
@@ -83,6 +79,9 @@ gcloud compute instances create example-instance \
     --restart-on-failure \
     --zone europe-west1-d \
     --metadata-from-file startup-script=startup-script.sh 
+
+testapp_IP = 104.155.9.200
+testapp_port = 9292
 
 ***Создание правила для firewall из консоли с помощью gcloud***
 
