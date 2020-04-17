@@ -83,7 +83,6 @@ gcloud compute instances create example-instance \
     --metadata-from-file startup-script=startup-script.sh
 
 testapp_IP = 35.187.90.33
-
 testapp_port = 9292
 
 ***Создание правила для firewall из консоли с помощью gcloud***
