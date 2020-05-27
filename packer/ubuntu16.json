@@ -3,7 +3,7 @@
     "source_image_family": "ubuntu-1604-lts",
     "project_id": "",
     "machine_type": "",
-    "disk_size": "",
+    "disk_size": "0",
     "disk_type": "",
     "network": "",
     "tags":""
@@ -37,3 +37,4 @@
         }
     ]
 }
+

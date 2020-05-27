@@ -8,8 +8,6 @@
 
         sudo tee -a /etc/yum.repos.d/google-cloud-sdk.repo << EOM
 
-        [google-cloud-sdk]
-
         name=Google Cloud SDK
 
         baseurl=https://packages.cloud.google.com/yum/repos/cloud-sdk-el7-x86_64
@@ -91,4 +89,21 @@ testapp_port = 9292
 ***Создание правила для firewall из консоли с помощью gcloud***
 
 gcloud compute --project=infra-273217 firewall-rules create default-puma-server --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:9292 --source-ranges=0.0.0.0/0 --target-tags puma-server
+
+## HW5 - Модели управления инфраструктурой Packer
+
+$packer -v
+1.5.5
+
+$packer validate ./ubuntu16.json
+Template validated successfully.
+
+$ packer build ubuntu16.json
+
+Compute Engine -> Images
+reddit-base-1587102199
+
+ssh appuser@34.76.226.8
+
+34.76.226.8:9292
 
