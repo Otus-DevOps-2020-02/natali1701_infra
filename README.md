@@ -1,8 +1,5 @@
 ## HW6 - Знакомство с Terraform
 
-$ terraform -v
-Terraform v0.12.8
-
 Создание директории terraform внутри проекта infra. Внутри директории terraform создан главный конфигурационный файл, что содержит декларативное описание инфраструктуры: main.tf.
 
 Чтобы не коммитить в репозиторий служебные файлы и директории создан файл .gitignore.
@@ -29,11 +26,11 @@ Terraform v0.12.8
 
 Планирование изменения и просмотр, что terraform собирается изменить относительно известного предыдущего состояния:
 
-$ terraform plan
+$terraform plan
 
 Применение:
 
-$ terraform apply
+$terraform apply
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed
 
@@ -52,5 +49,5 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed
 
 Отформатировать все конфигурационные файлы:
 
-$ terraform fmt
+$terraform fmt
 
