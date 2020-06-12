@@ -8,7 +8,7 @@ output "url" {
   description = "The base URL of the bucket, in the format gs://<bucket-name>"
 }
 
-output "name" {
-  value       = join("", google_storage_bucket.default.*.name)
-  description = "The name of bucket"
-}
+#output "name" {
+#  value       = join("", google_storage_bucket.default.*.name)
+#  description = "The name of bucket"
+#}
