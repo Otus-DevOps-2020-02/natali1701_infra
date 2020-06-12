@@ -1,8 +1,8 @@
 module "label" {
   source      = "git::https://github.com/SweetOps/terraform-null-label.git?ref=tags/0.7.0"
-#  enabled     = var.enabled
+  enabled     = var.enabled
 #  namespace   = var.namespace
-  name          = var.name
+  name        = var.name
 #  stage       = var.stage
 #  environment = var.environment
 #  delimiter   = var.delimiter

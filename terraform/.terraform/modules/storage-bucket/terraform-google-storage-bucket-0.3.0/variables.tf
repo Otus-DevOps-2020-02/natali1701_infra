@@ -18,13 +18,13 @@ variable "stage" {
 
 variable "name" {
   type        = string
-  default     = ""
-  description = "Solution name, e.g. 'app' or 'jenkins'"
+  default     = "HW7"
+#  description = "Solution name, e.g. 'app' or 'jenkins'"
 }
 
 variable "enabled" {
   type        = bool
-  default     = true
+  default     = false
   description = "Set to false to prevent the module from creating any resources"
 }
 
