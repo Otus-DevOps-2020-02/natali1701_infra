@@ -12,13 +12,13 @@ module "label" {
 
 resource "google_storage_bucket" "default" {
   count         = var.enabled ? 1 : 0
-  name          = module.label.id
+#  name          = module.label.id
   location      = var.location
   project       = var.project
   storage_class = var.storage_class
   force_destroy = var.force_destroy
 
-  labels = module.label.gcp_labels
+#  labels = module.label.gcp_labels
 
   lifecycle_rule {
     action {
