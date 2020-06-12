@@ -2,7 +2,7 @@ module "label" {
   source      = "git::https://github.com/SweetOps/terraform-null-label.git?ref=tags/0.7.0"
 #  enabled     = var.enabled
 #  namespace   = var.namespace
-#  name        = var.name
+  name          = var.name
 #  stage       = var.stage
 #  environment = var.environment
 #  delimiter   = var.delimiter
@@ -12,7 +12,7 @@ module "label" {
 
 resource "google_storage_bucket" "default" {
   count         = var.enabled ? 1 : 0
-  name          = module.label
+  name          = module.label.id
   location      = var.location
   project       = var.project
   storage_class = var.storage_class
