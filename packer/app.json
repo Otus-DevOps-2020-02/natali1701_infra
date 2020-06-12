@@ -6,7 +6,6 @@
     "disk_size": "10",
     "disk_type": "pd-standard",
     "network": "default"
-    "image_description": "Puma default description"
    },
 
     "builders": [
