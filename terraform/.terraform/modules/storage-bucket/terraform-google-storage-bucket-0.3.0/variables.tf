@@ -52,6 +52,12 @@ variable "location" {
   description = "The GCS region."
 }
 
+variable "id" {
+  type        = string
+  default     = ""
+}
+
+
 variable "project" {
   type        = string
   default     = ""
